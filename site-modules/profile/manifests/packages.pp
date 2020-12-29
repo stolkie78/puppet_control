@@ -4,7 +4,9 @@
 #
 # @example
 #   include profile::packages
-class profile::packages {
+class profile::packages (
+    List $packages
+) {
   $::packages.each |String $package| {
     package { $package:
       ensure => present,

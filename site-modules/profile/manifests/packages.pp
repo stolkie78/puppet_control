@@ -5,7 +5,7 @@
 # @example
 #   include profile::packages
 class profile::packages {
-  $packages::install.each |String $package| {
+  $::packages.each |String $package| {
     package { $package:
       ensure => present,
     }

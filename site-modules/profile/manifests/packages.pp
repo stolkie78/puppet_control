@@ -5,7 +5,7 @@
 # @example
 #   include profile::packages
 class profile::packages (
-    List $packages
+    Array $packages
 ) {
   $::packages.each |String $package| {
     package { $package:

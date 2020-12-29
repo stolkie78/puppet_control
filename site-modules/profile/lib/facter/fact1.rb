@@ -1,5 +1,5 @@
 Facter.add(:fact1) do
-    context :kernel => "Linux" || :kernel => "Darwin" 
+    context :kernel => [ "Linux", "Darwin" ]
     setcode do
         osfamily Facter.value(:osfamily)
         case osfamily

@@ -5,5 +5,7 @@
 # @example
 #   include role::osx
 class role::osx {
+  contain profile::packages
+
   notify { 'OSX' :}
 }

@@ -1,2 +1,3 @@
 packages::install:
   - macpass
+  - qpdf
